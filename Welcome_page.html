@@ -54,6 +54,53 @@
         font-weight: 450;
         font-family: Arial, Helvetica;
     }
+    .mobileNum_input_container{
+        display: flex ;
+        padding: 0 0 15px 0 ;
+    }
+    .input_submit_container{
+        text-align: left ;
+        padding: 0 ;
+    }
+    .countryCode_dropbox_con{
+        position: relative ;
+        display: flex ;
+        -webkit-box-align: center ;
+        -ms-flex-align: center ;
+        align-items: center ;
+    }
+    .country_code_option {
+        font-family: Roboto;
+        width: 62px;
+        max-width: 62px;
+        margin-right: 1rem;
+        padding: 0;
+        font-size: 17px;
+        font-weight: 500;
+        color: #616161;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #f37521;
+        height: 32px;
+    }
+
+    .phonenum_input {
+        font-family: Roboto;
+        font-weight: 500;
+        height: 30px;
+        position: relative;
+        flex: 2;
+        border-bottom: 1px solid #f37521;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        outline: none;
+        width: 15%;
+        padding: 1px 2px;
+        background-clip: padding-box;
+        border-radius: 0;
+        font-size: 20px;
+    }
 
 </style>
 
@@ -69,19 +116,20 @@
                         <p class="welcome_message">Welcome ! </p>
                         <p class="welcome_check_message">Check Your Loyalty Point & Rewards</p>
                 </div>
+                <div class="input_submit_container">
+                    <div class="mobileNum_input_container">
+                        <div class="countryCode_dropbox_con">
+                            <select class="country_code_option">
+                                <option value="MY">+60</option>
+                            </select>
+                        </div>
+                        <input class="phonenum_input" placeholder="Enter mobile number" type="tel">
+                    </div>
+                </div>
 
             </div>
 
-            <!-- <div>
-                
-            </div>
-            <div>
-                <select id="country-code" name="country-code">
-                    <option value="+60">+60</option>
-                  </select>
-                  <input type="tel" id="phone" name="phone" class="phone-input" placeholder="182982586" maxlength="9">
-            </div> -->
-        
+
             <button>Check Loyalty Points</button>
         
             <footer>
