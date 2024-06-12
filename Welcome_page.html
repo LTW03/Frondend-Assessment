@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Page</title>
-    <link rel="stylesheet" href="/style/Welcome_page_style.css">
+    <link rel="stylesheet" href="style/Welcome_page_style.css">
 </head>
 
 <body>
@@ -15,8 +15,8 @@
                     <img src="Images/Mulah_logo.png" alt="">
                 </div>
                 <div class="welcome">
-                    <p class="welcome_message">Hello, </p>
-                    <p class="welcome_message">Welcome ! </p>
+                    <p class="welcome_message">Hello,</p>
+                    <p class="welcome_message">Welcome!</p>
                     <p class="welcome_check_message">Check Your Loyalty Point & Rewards</p>
                 </div>
                 <div class="input_submit_container">
@@ -29,19 +29,22 @@
                         <input class="phonenum_input" style="color: #a8a8a8;" placeholder="Enter mobile number" type="tel" maxlength="15">
                     </div>
                     <div class="sub_button">
-                        <button>Check Loyalty Points</button>
+                        <button onclick="submitPhoneNumber()">Check Loyalty Points</button>
                     </div>
                 </div>
                 <footer class="foot">
                     <hr>
-                    <p >Powerd by <a href="#">MulahReward.com</a></p>
+                    <p>Powered by <a href="#">MulahReward.com</a></p>
                 </footer>
             </div>
-        </div>   
+        </div>
     </div>
 
     <script>
-        
+        function submitPhoneNumber() {
+            let phoneNumber = document.querySelector('.phonenum_input').value;
+            window.location.href = `register.html?phone=${phoneNumber}`;
+        }
         function formatPhoneNumber() {
             let input = document.querySelector('.phonenum_input');
             let countryCode = document.querySelector('.country_code_option').value;

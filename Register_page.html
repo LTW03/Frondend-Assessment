@@ -3,9 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Register Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        body{
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        .centerlize_container{
+            display: flex;
+            justify-content: center;
+        }
+        .mobilesize_contain {
+            max-width: 400px;
+            width: 430px;
+        }
+        .content_container{
+            display: flex;
+            flex-direction: column;
+            color: #aaa;
+            min-height: 90vh;
+        }
+        .logo{
+            margin-top: 14%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .logo img{
+            height: 25px;
+        }
+        .Register_welcome{
+            color: #646464 ;
+            box-sizing: border-box ;
+            margin-bottom: 6px ;
+            text-align: left ;
+            margin-top: 30px;
+        }
+        .reg{
+            margin: 0 ;
+            font-size: 38px ;
+            font-weight: 100 ;
+            letter-spacing: 2px ;
+        }
+        .alert{
+            margin: 0 ;
+            padding-top: 1em ;
+            font-size: 15px ;
+            font-style: italic ;
+            font-weight: 600 ;
+            letter-spacing: .2px ;
+        }
+
+
+
+        .sub_button{
+            margin-bottom: 20px ;
+            -webkit-box-pack: center ;
+            -ms-flex-pack: center ;
+            justify-content: center ;
+            -webkit-box-align: center ;
+            -ms-flex-align: center ;
+            align-items: center ;
+        }
+        .sub_button button{
+            background-color: #f47521;
+            color: white;
+            border: none;
+            width: 100%;
+            border-radius: 30px;
+            line-height: 0;
+            margin: 30px 0 ;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            transition: box-shadow 0.5s;
+            height: 50px;
+        }
+        .sub_button button:hover{
+            box-shadow:0px 5px 10px rgba(0, 0, 0, 0.4);
+        }
+                
+    </style>
 </head>
+
 <body>
+    <div class="centerlize_container">
+        <div class="mobilesize_contain">
+            <div class="content_container">
+                <div class="logo">
+                    <img src="Images/Mulah_logo.png" alt="">
+                </div>
+                <div class="Register_welcome">
+                    <p class="reg">Registration</p>
+                    <p class="alert">Please fill up your details. </p>
+                </div>
+                <form action="display.html" method="GET" id="registerForm">
+                    <div class="input_container">
+                        <p>Name: </p>
+                        <input type="text" name="" placeholder="Enter Name">
+                        <div>
     
+                        </div>
+                    </div>
+
+                </form>
+
+
+
+                <div class="input_submit_container">
+                    <div class="mobileNum_input_container">
+                    </div>
+                    <div class="sub_button">
+                        <button>Continue</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>   
+    </div>
 </body>
 </html>
