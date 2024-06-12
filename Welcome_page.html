@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Page</title>
+    <link rel="stylesheet" href="/style/Welcome_page_style.css">
 </head>
-<link rel="stylesheet" href="style/Welcome_page_style.css">
 
 <body>
     <div class="centerlize_container">
@@ -21,12 +21,12 @@
                 </div>
                 <div class="input_submit_container">
                     <div class="mobileNum_input_container">
-                        <div class="phone_input_group">
+                        <div class="countryCode_dropbox_con">
                             <select class="country_code_option">
                                 <option value="+60">+60</option>
                             </select>
-                            <input class="phonenum_input" style="color: #a8a8a8;" placeholder="Enter mobile number" type="tel" maxlength="15">
                         </div>
+                        <input class="phonenum_input" style="color: #a8a8a8;" placeholder="Enter mobile number" type="tel" maxlength="15">
                     </div>
                     <div class="sub_button">
                         <button>Check Loyalty Points</button>
@@ -41,23 +41,20 @@
     </div>
 
     <script>
-        // Function to format phone number as the user types
+        
         function formatPhoneNumber() {
             let input = document.querySelector('.phonenum_input');
             let countryCode = document.querySelector('.country_code_option').value;
             let inputValue = input.value;
 
-            // Remove all characters except digits
+            // remove characters except digits
             let cleaned = inputValue.replace(/\D/g, '');
 
-            // Match the cleaned value to the desired format
+            // match the cleaned value to the desired format
             let formatted = cleaned.replace(/(\d{2})(\d{3})(\d{6})/, `${countryCode} $1 $2 $3`);
-
-            // Update the input value
+            //update
             input.value = formatted;
         }
-
-        // Add event listener for input change
         document.querySelector('.phonenum_input').addEventListener('input', formatPhoneNumber);
     </script>
 </body>
