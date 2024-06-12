@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+</head>
+<style>
+    body{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .centerlize_container{
+        display: flex;
+        justify-content: center;
+    }
+    .mobilesize_contain{
+        max-width: 480px;
+        width: 480px;
+    }
+    .content_container{
+        display: flex;
+        flex-direction: column;
+        color: #aaa;
+        min-height: 90vh;
+    }
+    .logo{
+        margin-top: 14%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .logo img{
+        height: 25px;
+    }
+    .welcome{
+        margin: 70px 0px 45px;
+        padding: 12px 0px 22px;
+    }
+    .welcome_message{
+        font-size: 52px;
+        line-height: 1.2px;
+        font-weight: 600px;
+    }
+
+</style>
+
+<body>
+    <div class="centerlize_container">
+        <div class="mobilesize_contain">
+            <div class="content_container">
+                <div class="logo">
+                    <img src="Images/Mulah_logo.png" alt="">
+                </div>
+                <div class="welcome">
+                        <p class="welcome_message">Hello, </p>
+                        <p class="welcome_message">Welcome ! </p>
+                        <p>Check Your Loyalty Point & Rewards</p>
+                </div>
+
+            </div>
+
+            <!-- <div>
+                
+            </div>
+            <div>
+                <select id="country-code" name="country-code">
+                    <option value="+60">+60</option>
+                  </select>
+                  <input type="tel" id="phone" name="phone" class="phone-input" placeholder="182982586" maxlength="9">
+            </div> -->
+        
+            <button>Check Loyalty Points</button>
+        
+            <footer>
+                Powerd by <a href="#">MulahReward.com</a>
+            </footer>
+
+        </div>   
+    </div>
+    
+
+
+    
+</body>
+
+<script>
+    // Function to format phone number as the user types
+    function formatPhoneNumber() {
+      let input = document.getElementById('phone');
+      let inputValue = input.value;
+  
+      // Remove characters except digits
+      let cleaned = inputValue.replace(/\D/g, '');
+      // Update value
+      input.value = cleaned;
+    }
+    document.getElementById('phone').addEventListener('input', formatPhoneNumber);
+  </script>
+</html>
