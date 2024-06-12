@@ -6,6 +6,7 @@
     <title>Welcome Page</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     body{
         font-size: 1rem;
         font-weight: 400;
@@ -86,7 +87,7 @@
 
     .phonenum_input {
         font-family: Roboto;
-        font-weight: 500;
+        font-weight: 400;
         height: 30px;
         position: relative;
         flex: 2;
@@ -101,7 +102,44 @@
         border-radius: 0;
         font-size: 20px;
     }
-
+    .sub_button{
+        margin-bottom: 20px ;
+        -webkit-box-pack: center ;
+        -ms-flex-pack: center ;
+        justify-content: center ;
+        -webkit-box-align: center ;
+        -ms-flex-align: center ;
+        align-items: center ;
+    }
+    .sub_button button{
+        background-color: #f47521;
+        color: white;
+        border: none;
+        width: 100%;
+        border-radius: 30px;
+        line-height: 0;
+        margin: 30px 0 ;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        transition: box-shadow 0.9s;
+        height: 50px;
+    }
+    .foot{
+        overflow: auto;
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .foot a{
+        letter-spacing: 1px !important;
+        color: #395daa;
+        text-decoration: none;
+    }
+    .foot p {
+        padding-top: 30px;
+    }
 </style>
 
 <body>
@@ -123,19 +161,18 @@
                                 <option value="MY">+60</option>
                             </select>
                         </div>
-                        <input class="phonenum_input" placeholder="Enter mobile number" type="tel">
+                        <input class="phonenum_input" style="color: #a8a8a8;" placeholder="Enter mobile number" type="tel">
+                    </div>
+                    <div class="sub_button">
+                        <button>Check Loyalty Points</button>
                     </div>
                 </div>
-
+                <footer class="foot">
+                    <hr>
+                    <p >Powerd by <a href="#">MulahReward.com</a></p>
+                    
+                </footer>
             </div>
-
-
-            <button>Check Loyalty Points</button>
-        
-            <footer>
-                Powerd by <a href="#">MulahReward.com</a>
-            </footer>
-
         </div>   
     </div>
     
